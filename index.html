@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./imgs/logo.png"> Weather</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Home<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">News<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Live cameras<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Photos<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Contact<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------------- -->
+    <!-- home section -->
+    <section class="home">
+        <div class="container gy-0">
+            <div class="row gx-0">
+                <form action="" class="find-location mt-5 mb-5">
+                    <div class="inputs-container position-relative ">
+                        <input type="text" class=" m-auto input " placeholder="Find your location..." id="search-input">
+                        <input type="button" value="Find" id="submit"
+                            class="btn btn-info position-absolute second-input">
+                    </div>
+                </form>
+                <div class="col-md-4">
+                    <div class="box ">
+                        <div class="card-head d-flex justify-content-center pt-2">
+                            <p class="Spara" id="day">sun Aug 13 2023</p>
+                            <!-- <p class="Dpara" id="date">13August</p> -->
+                        </div>
+                        <div class="card-body">
+                            <h3 id="countary">cairo</h3>
+                            <div class="d-flex tempa">
+                                <h1 id="temp">35<sup>o</sup>C</h1>
+                                <img src="./imgs/113.png" class="align-self-center" alt="moon" id="weather-img">
+                            </div>
+                            <p class="status" id="weather-status">clear</p>
+                            <div class="d-flex foot pb-2">
+                                <img src="./imgs/icon-umberella.png" alt="umbrella">
+                                <p>20%</p>
+                                <img src="./imgs/icon-wind.png" alt="wind">
+                                <p>18km/h</p>
+                                <img src="./imgs/icon-compass.png" alt="campus">
+                                <p>East</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box2 ">
+                        <div class="card-head2 d-flex justify-content-center pt-2">
+                            <p class="Spara" id="day2">mon Aug 14 2023</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="./imgs/113 (1).png" class="align-self-center mt-5" alt="moon" id="sor-img1">
+                                <h1 id="max-temp">39.9<sup>o</sup>C</h1>
+                                <p class="sup-temp">24.7<sup>o</sup></p>
+                            </div>
+                            <p class="status2">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="box3">
+                        <div class="card-head3 d-flex justify-content-center pt-2">
+                            <p class="Spara" id="day3">tus Aug 15 2023</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="./imgs/113 (1).png" class="align-self-center mt-5" alt="moon" id="sor-img2">
+                                <h1 id="max-temp2">39.6<sup>o</sup>C</h1>
+                                <p class="sup-temp" id="min-temp">24.7<sup>o</sup></p>
+                            </div>
+                            <p class="status2" id="stat3">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------- -->
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="foot-box">
+                        <form action="" class="find-location  mt-5 pb-3">
+                            <div class="inputs-container position-relative ">
+                                <input type="text" class=" m-auto input "
+                                    placeholder="Enter your email to subscribe...">
+                                <input type="button" value="subscribe" id="submit2"
+                                    class="btn btn-info position-absolute second-input">
+                            </div>
+                        </form>
+                        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-3 offset">
+                    <div class="foot-box2 d-flex justify-content-center align-items-center  mt-5">
+                        <div class="icon-cover d-flex justify-content-center"><i
+                                class="fa-brands fa-facebook-f align-self-center"></i></div>
+                        <div class="icon-cover d-flex justify-content-center"><i
+                                class="fa-brands fa-twitter align-self-center"></i></div>
+                        <div class="icon-cover d-flex justify-content-center"><i
+                                class="fa-brands fa-google-plus-g align-self-center"></i></div>
+                        <div class="icon-cover d-flex justify-content-center"><i
+                                class="fa-brands fa-pinterest align-self-center"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ---------------------------------------------------------------- -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
